@@ -1,0 +1,26 @@
+{
+  "name": "basic-car",
+  "version": "1.0.0",
+  "description": "Creando el motor de un auto, con sus funcionalidades.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enzoolionel/basic-car.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Enzoolionel/basic-car/issues"
+  },
+  "homepage": "https://github.com/Enzoolionel/basic-car#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "nodemon": "^3.0.1"
+  }
+}
