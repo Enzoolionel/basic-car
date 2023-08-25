@@ -1,0 +1,9 @@
+1- valvula de admision se abre[1] dejando entrar la mescla de nafta y aire, piston baja[0]
+
+2- valvula de admision se cierra[0] dejando la mezcla dentro de la camara del cilindro lista para la explocion,
+piston sube[1] creando asi la explosion
+dejando los gases.
+
+3- valvula de escape se abre[1] dejando salir los gases que quedan en la camara del cilindro.
+
+4- piston sube[1] expulsado asi los gases, cuando esta llegando arriba la valvula de escape se va cerrando[0] una vez completo el ciclo piston baja[0] dejando asi todo listo para repetir el paso 1.
