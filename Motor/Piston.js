@@ -1,7 +1,7 @@
 class Piston{
     constructor(cc){
         this.cc = cc;
-        this.posicion = 1;
+        this.posicion = 0;
     }
 
     moverPiston(){

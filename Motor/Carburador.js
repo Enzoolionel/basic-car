@@ -3,19 +3,19 @@ class Carburador{
         this.cc = cc;
         this.consumo = consumo;
         this.acelerando = false;
-        this.aire = 0;
+
     }
 
     acelerar(){
         this.acelerando = true;
-        this.consumo ++;
-        this.aire = 1;
+        this.consumo = this.cc / 100;
+        console.log("acelerando")
     }
 
     desAcelerar(){
-        this.consumo = consumo;
+        this.consumo --;
         this.acelerando = false;
-        this.aire = 0;
+        console.log("desacelerando")
     }
 }
 

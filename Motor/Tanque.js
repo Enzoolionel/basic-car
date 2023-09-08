@@ -1,4 +1,3 @@
-
 class Tanque{
     constructor(){
         this.capacidad = 50;
@@ -7,12 +6,17 @@ class Tanque{
     }
 
     cargarNafta(cantidad){
-        if(this.nafta + cantidad <= this.capacidad){
-            this.nafta += cantidad;
-            console.log(`se cargo ${cantidad} de nafta`)
-        }else{
-            console.log(`No se puede cargar ${cantidad} ya que tiene ${this.nafta} y su cantidad es ${this.capacidad}`)
-        }
+        return new Promise( (res, req) => {
+            if(this.nafta + cantidad <= this.capacidad){
+                console.log(`Cargando ${cantidad} de nafta!`)
+                this.nafta += cantidad;
+                res()
+            }else{
+                console.log(`No se puede cargar esa cantidad`)
+                req(new Error('tanque vacio'))
+            }
+
+        })
     }
 }
 
